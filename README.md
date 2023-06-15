@@ -13,23 +13,29 @@
   플로깅 모임을 만들어 공유하고, 커뮤니티를 통해 플로깅 외 환경 정보를 공유할 수 있다.
 </p>
 <hr>
-<pre>
-  페이지
-
-1. index.html.
-: 첫 메인 페이지 (네비게이션바 로고 이미지)
-
-2. introduction.html
-: 네비게이션바 - 플로깅이란?
-
-3. meeting.html
-: 네비게이션 - 함께해요
-  + index.html에서 한강 버튼, '이번주 인기 플로깅 모임 >>', '상시 모집! 플로깅 모임 >>' 누르면 해당 페이지 이동 가능
-  + plogging.html에서 목록 버튼 누르면 해당 페이지 이동 가능
-
-4. community.html
-: 네비게이션 - 커뮤니티
-
-6. plogging.html
-: index.html과 meeting.html에 있는 '토요일 오전 9시 뚝섬 플로깅 모집합니다~' 카드 글 누르면 해당 페이지 이동 가능
-</pre>
+<ol>
+  <li>index.html
+    <br>
+    : 첫 메인 페이지 (네비게이션바 로고 이미지)
+  </li>
+  <li>introduction.html
+    <br>>
+    : 네비게이션바 - 플로깅이란?
+  </li>
+  <li>meeting.html
+    <br>
+    : 네비게이션 - 함께해요
+    <br>
+    + index.html에서 한강 버튼, '이번주 인기 플로깅 모임 >>', '상시 모집! 플로깅 모임 >>' 누르면 해당 페이지 이동 가능
+    <br>
+    + plogging.html에서 목록 버튼 누르면 해당 페이지 이동 가능
+  </li>
+  <li>community.html
+    <br>
+    : 네비게이션 - 커뮤니티
+  </li>
+  <li> plogging.html
+    <br>
+    : index.html과 meeting.html에 있는 '토요일 오전 9시 뚝섬 플로깅 모집합니다~' 카드 글 누르면 해당 페이지 이동 가능   
+  </li>
+</ol>
