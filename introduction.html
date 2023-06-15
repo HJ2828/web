@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셰어유-플로깅이란?</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <!-- 타이틀 아이콘 -->
+    <link rel="shortcut icon" type="image⁄x-icon" href="images/logo_icon.png">    
+</head>
+<body>
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+        <div class="container px-5" id="nav-container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="로고" width="100">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="introduction.html">플로깅이란?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meeting.html">함께해요</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">커뮤니티</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex" role="search" id="nav-search">
+                        <i class="bi bi-search ms-1" id="search-icon"></i>
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="검색어를 입력하세요" aria-label="Search" id="search-bar">
+                    </form>
+                    <li class="nav-item ms-2"><a class="nav-link" href="#">로그인/회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+    <!-- Top 버튼 시작 -->
+    <div class="d-flex justify-content-end align-items-end py-5 pe-5 fixed-bottom" id="top">
+        <a href="#what-plogging" title="top" class="text-dark fs-5 text-decoration-none">
+            <button class="bg-color-3 top-button rounded-pill px-4 border-0">TOP</button>
+        </a>
+    </div>
+    <!-- Top 버튼 끝 -->
+
+    <!-- 플로깅이란? 섹션 시작 -->
+    <section class="container overflow-hidden py-5" id="what-plogging">
+        <div class="row my-5 py-5 g-4 margin-side">
+            <div class="col-md-6">
+                <img src="images/plogging1.jpg" alt="플로깅이란?" width="100%" loading="lazy">
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h3>플로깅이란?</h3>
+                <p>플로깅은 이삭을 줍는다(plocka ypp)는 뜻의 스웨덴어와 영어 조깅(jogging)의 합성어로 산책이나 조깅 등 운동을 하며 쓰레기를 줍는 전세계적 환경운동의 하나입니다.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 플로깅이란? 섹션 끝 -->
+
+    <!-- 사이트 소개 섹션 시작 -->
+    <section id="home" class="container-fluid overflow-hidden py-5 bg-color-1" id="what-plogging">
+        <div class="container">
+            <div class="row my-5 pt-5 g-4 margin-side">
+                <div class="col-md-6 align-self-center text-end">
+                    <p class="fs-4 text-light">일상 생활에서의 운동.<br> 산책, 달리기, 등산을 사람들과<br> 모임을 만들어 함께 해보아요.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/jogging.jpg" alt="조깅" width="100%" loading="lazy">
+                </div>
+            </div>
+            <div class="row my-5 pb-5 g-4 margin-side">
+                <div class="col-md-6">
+                    <img src="images/plogging2.jpg" alt="쓰레기줍기" width="100%" loading="lazy">
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <p class="fs-4 text-light">강, 산, 바다 어디든 괜찮아요.<br>함께 쓰레기를 줍고<br>올바른 분리 배출을 실천해보아요.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-light py-5 margin-updown">
+            <h2 class="margin-updown end-margin">셰어유를 통해<br>플로깅 모임을 만들고<br>환경 보호 활동을 실천해보세요.</h2>
+        </div>
+    </section>
+    <!-- 사이트 소개 섹션 끝 -->
+
+    <!-- 사이트 소개 이미지 섹션 시작 -->
+    <section class="d-flex flex-column justify-content-center align-items-center vh-100 text-light" id="plogging-brand">
+        <img src="images/logo2.png" width="15%" loading="lazy">
+        <p class="fs-3 text-center">셰어유는 일상 생활 속 실천할 수 있는 플로깅을 통해<br>분리 배출을 실천하고, 환경을 보호합니다.</p>
+        <div class="pt-5 text-center">
+            <h2 class="pt-5 pb-3 text-color-1">셰어유는 언제나 당신의 환경 보호 활동을 기다립니다.</h2>
+        </div>
+    </section>
+    <!-- 사이트 소개 이미지 섹션 끝 -->
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-light mt-4" id="footer">
+        <div class="container text-center text-color-4">
+            <p class="py-0 mb-0">(주)셰어유 | 서울시 노원구 공릉동 | <br>웹제작자: 서희재 | 이메일: shihi@swu.ac.kr | 이미지출처: freepik, flaction</p>
+            <p class="py-0 mb-4">Copyright<i class="bi bi-c-circle"></i> 2023.
+                <a href="" target="_blank" class="link-danger text-decoration-none">HEEJAE SEO</a>
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- 풋터 끝-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

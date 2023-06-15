@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셰어유-함께해요</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <!-- 타이틀 아이콘 -->
+    <link rel="shortcut icon" type="image⁄x-icon" href="images/logo_icon.png">
+</head>
+<body>
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+        <div class="container px-5" id="nav-container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="로고" width="100">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="introduction.html">플로깅이란?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meeting.html">함께해요</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">커뮤니티</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex" role="search" id="nav-search">
+                        <i class="bi bi-search ms-1" id="search-icon"></i>
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="검색어를 입력하세요" aria-label="Search" id="search-bar">
+                    </form>
+                    <li class="nav-item ms-2"><a class="nav-link" href="#">로그인/회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+    
+    <!-- Top 버튼 시작 -->
+    <div class="d-flex justify-content-end align-items-end py-5 pe-5 fixed-bottom" id="top">
+        <a href="#meeting" title="top" class="text-dark fs-5 text-decoration-none">
+            <button class="bg-color-3 top-button rounded-pill px-4 border-0">TOP</button>
+        </a>
+    </div>
+    <!-- Top 버튼 끝 -->
+
+    <!-- 좌측 카테고리, 우측 모집 글 시작-->
+    <section class="container overflow-hidden py-5" id="meeting">
+        <div class="row margin-side">
+            <!-- 좌측 카테고리 시작 -->
+            <div class="col-md-2 py-5">
+                <ul class="list-group py-2">
+                    <h5 class="fw-bold ps-2">위치</h5>
+                    <li class="list-group-item">전체</li>
+                    <li class="list-group-item">서울</li>
+                    <li class="list-group-item">광주</li>
+                    <li class="list-group-item">강원도</li>
+                    <li class="list-group-item">경기도</li>
+                    <li class="list-group-item">경상도</li>
+                    <li class="list-group-item">대구</li>
+                    <li class="list-group-item">대전</li>
+                    <li class="list-group-item">부산</li>
+                    <li class="list-group-item">세종</li>
+                    <li class="list-group-item">울산</li>
+                    <li class="list-group-item">인천</li>
+                    <li class="list-group-item">전라도</li>
+                    <li class="list-group-item">제주도</li>
+                    <li class="list-group-item">충청도</li>
+                    <li class="list-group-item">그 외</li>
+                </ul>
+                <div>
+                    <ul class="list-group py-2">
+                        <h5 class="fw-bold ps-2">장소</h5>
+                        <li class="list-group-item">한강</li>
+                        <li class="list-group-item">공원/국립공원</li>
+                        <li class="list-group-item">바다</li>
+                        <li class="list-group-item">산</li>
+                        <li class="list-group-item">강/호수</li>
+                        <li class="list-group-item">그 외</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 좌측 카테고리 끝 -->
+
+            <!-- 우측 모집 글 시작-->
+            <div class="col-md-10 py-5 bg-white">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>함께해요</h3>
+                        <p>모집 글을 통해 이웃과 플로깅을 함께 해요.</p>
+                    </div>
+                    <div class="col-md-7 ps-5 align-self-center" id="meeting-search">
+                        <form class="d-flex justify-content-end" role="search">
+                            <i class="bi bi-search my-auto fs-5"></i>
+                            <input class="form-control me-0 w-75  border-0 bg-none shadow-none" type="search" placeholder="제목, 내용, 작성자명, 태그로 검색" aria-label="Search">
+                            <button class="btn fs-4 w-25 border-0 bg-color-2 text-light" type="submit">검색</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div>
+                            <p class="text-color-4">사람들이 많이 찾는 태그</p>
+                        </div>
+                        <div>
+                            <button class="bg-color-2 text-light rounded-2 border-0 px-3">#한강</button>
+                            <button class="bg-color-2 text-light rounded-2 border-0 px-3">#뚝섬</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">#노들섬</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">#여의도</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">#경기도</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">#제주도</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 align-self-end" id="meeting-search">
+
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn bg-color-2 dropdown-toggle btn-sm text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  인기순
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">등록순</a></li>
+                                  <li><a class="dropdown-item" href="#">추천순</a></li>
+                                  <li><a class="dropdown-item" href="#">좋아요순</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 플로깅 모집 글 목록 시작 -->
+                <div class="" id="ploggingList">
+                    <div class="row py-3">
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="plogging.html" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/plogging3.jpg" height="160px" class="card-img" alt="뚝섬플로깅" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">토요일 오전 9시 뚝섬 플로깅 모임 모집합니다~</h6>
+                                        <p class="card-text">안녕하세요 저희는 올해 1월부터 매주 토요일 뚝섬에서 플로깅을 진행중인</p>
+                                        <p class="fs-small">#서울 #한강 #뚝섬 #오전</p>
+                                        <div class="row fs-small">
+                                            <p class="col">김그린</p>
+                                            <p class="col text-end">2023.05.16</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/mangwon.jpg" height="160px" class="card-img" alt="망원한강공원" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">망원한강공원헤서 같이 플로깅 하실 분</h6>
+                                        <p class="card-text">함께 플로깅하실 분 구합니다. 지금 5명정도 같이 하고 있습니...</p>
+                                        <p class="fs-small">#서울 #한강 #망원한강공원</p>
+                                        <div class="row fs-small">
+                                            <p class="col">지우개</p>
+                                            <p class="col text-end">2023.06.11</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/busanHaeundae.jpg" height="160px" class="card-img" alt="부산해운대" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">부산 해운대 플로깅 동아리 피플에서 동아리원 모집!</h6>
+                                        <p class="card-text">부산하면 해운대 해운대하면 부산. 회원수 26명 최대 플로깅 동아 ...</p>
+                                        <p class="fs-small">#부산 #해운대</p>
+                                        <div class="row fs-small">
+                                            <p class="col">부산사람</p>
+                                            <p class="col text-end">2023.05.25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/jeju1.jpg" height="160px" class="card-img" alt="제주올레길" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">6월 17일 제주 올레길에서 플로깅하실 분들 모집</h6>
+                                        <p class="card-text">혹시 6월 17일에 제주도에 계신분들 중에 같이 플로깅 하실 분 계 ...</p>
+                                        <p class="fs-small">#제주도 #제주 #올레길 #여행</p>
+                                        <div class="row fs-small">
+                                            <p class="col">감귤</p>
+                                            <p class="col text-end">2023.06.10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/gwangan.jpg" height="160px" class="card-img" alt="부산광안리" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">[상시모집] 부산 광안리 해수욕장에서 매주 토요일 플로깅 하실 분</h6>
+                                        <p class="card-text">현재 8명 정도 모였습니다. 필수 참여 아니고 강요 안합니다 깨끗한 ...</p>
+                                        <p class="fs-small">#부산 #광안리 #해수욕장</p>
+                                        <div class="row fs-small">
+                                            <p class="col">청소부</p>
+                                            <p class="col text-end">2023.05.18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/plogging4.jpg" height="160px" class="card-img" alt="동네플로깅" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">[모집중] 공릉동 주변 일대 플로깅 함께 해요!!</h6>
+                                        <p class="card-text">안녕하세요. 저희는 대학생들로 이루어진 플로깅 동아리입니다. ...</p>
+                                        <p class="fs-small">#서울 #노원구 #공릉동 #대학생</p>
+                                        <div class="row fs-small">
+                                            <p class="col">대학연합동아리</p>
+                                            <p class="col text-end">2023.03.10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/park1.jpg" height="160px" class="card-img" alt="공원1" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">서울시 아름구 행복동 근린공원 플로깅</h6>
+                                        <p class="card-text">서울시 아름구 행복동 주민들과 함께하는 근린공원 플로깅에 참여 ...</p>
+                                        <p class="fs-small">#서울 #아름구 #행복동 #근린공원</p>
+                                        <div class="row fs-small">
+                                            <p class="col">행복동주민1</p>
+                                            <p class="col text-end">2023.06.01</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/sejongLake.jpg" height="160px" class="card-img" alt="세종호수공원" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">매주 금요일 저녁 8시 산책겸 호수공원 플로깅 참여자 모집합니다</h6>
+                                        <p class="card-text">세종 호수공원에서 매주 금요일에 플로깅 진행하려 합니다. 혹시 원 ...</p>
+                                        <p class="fs-small">#세종시 #호수공원 #금요일</p>
+                                        <div class="row fs-small">
+                                            <p class="col">짱구</p>
+                                            <p class="col text-end">2023.04.09</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/andong.jpg" height="160px" class="card-img" alt="안동월령교" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">안동 월령교 근처 플로깅 모집합니다</h6>
+                                        <p class="card-text">안동 월령교 근처에서 다음주 토요일에 함께 플로깅하실 분 모집합니다.</p>
+                                        <p class="fs-small">#안동 #월령교</p>
+                                        <div class="row fs-small">
+                                            <p class="col">동그라미</p>
+                                            <p class="col text-end">2023.06.18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/busanOryukdo.jpg" height="160px" class="card-img" alt="부산오륙도" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">[모집]부산오륙도 청소년플로깅 함께해요</h6>
+                                        <p class="card-text">플로깅 함께 하실 청소년을 모집합니다. 일시: 2023년 6월 23일</p>
+                                        <p class="fs-small">#부산 #오륙도 #청소년</p>
+                                        <div class="row fs-small">
+                                            <p class="col">청소년단체</p>
+                                            <p class="col text-end">2023.05.29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/cheonggyecheon.jpg" height="160px" class="card-img" alt="청계천" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">30일 행사 이후 플로깅 진행합니다.</h6>
+                                        <p class="card-text">청계천 행사 이후 플로깅을 진행하려고 합니다. 누구나 상관없습니다.</p>
+                                        <p class="fs-small">#서울 #청계천</p>
+                                        <div class="row fs-small">
+                                            <p class="col">개구리</p>
+                                            <p class="col text-end">2023.06.13</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/hanriver1.jpg" height="160px" class="card-img" alt="한강" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">매주 일요일 아침 8시 한강플로깅 모집</h6>
+                                        <p class="card-text">매주 일요일 아침에 함께 한강에서 플로깅 하실 분들 모집합니다.</p>
+                                        <p class="fs-small">#서울 #한강</p>
+                                        <div class="row fs-small">
+                                            <p class="col">한리버</p>
+                                            <p class="col text-end">2023.05.02</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/seoul-tower-seoul-city.jpg" height="160px" class="card-img" alt="남산타워" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">[모집끝]남산타워 플로깅 모집합니다.</h6>
+                                        <p class="card-text">서울 남산타워에서 플로깅하실 분들 모집합니다.</p>
+                                        <p class="fs-small">#서울 #남산타워</p>
+                                        <div class="row fs-small">
+                                            <p class="col">커피</p>
+                                            <p class="col text-end">2023.04.18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/seolark.jpg" height="160px" class="card-img" alt="설악산" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">등산하면서 함께 플로깅해요~~</h6>
+                                        <p class="card-text">6월 24일에 설악산에 가서 쓰레기 줍는 활동을 하려고 합니다.</p>
+                                        <p class="fs-small">#강원도 #설악산</p>
+                                        <div class="row fs-small">
+                                            <p class="col">행복산악회</p>
+                                            <p class="col text-end">2023.06.10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/seokchonLake.jpg" height="160px" class="card-img" alt="석촌호수" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">격주 토요일 오전 석촌호수 근방 플로깅모집</h6>
+                                        <p class="card-text">격주로 석촌호수 근방 플로깅 모집합니다. 시작한지 한 달 조금 지났습니다.</p>
+                                        <p class="fs-small">#서울 #석촌호수</p>
+                                        <div class="row fs-small">
+                                            <p class="col">석호</p>
+                                            <p class="col text-end">2023.06.04</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-3 col-lg">
+                            <a href="" target="_self">
+                                <div class="card shadow">
+                                    <img src="images/park2.jpg" height="160px" class="card-img" alt="공원2" loading="lazy">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-6 fw-bold">종로구 일대 공원 플로깅 모집</h6>
+                                        <p class="card-text">종로구 일대 공원에서 함께 플로깅하실 분들 모집합니다.</p>
+                                        <p class="fs-small">#서울 #종로구</p>
+                                        <div class="row fs-small">
+                                            <p class="col">초록</p>
+                                            <p class="col text-end">2023.06.11</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container py-3">
+                    <div class="d-flex justify-content-center text-color-4">
+                        <p>&lt;</p>
+                        <p class="fw-bold text-dark">&nbsp;1&nbsp;</p>
+                        <p>&nbsp;2&nbsp;</p>
+                        <p>&nbsp;3&nbsp;</p>
+                        <p>&nbsp;...&nbsp;</p>
+                        <p>&nbsp;16&nbsp;</p>
+                        <p>&gt;</p>
+                    </div>
+
+                </div>
+                <!-- 플로깅 모집 글 끝 -->
+            </div>
+            <!-- 우측 모집 글 끝 -->
+        </div>
+    </section>
+    <!-- 좌측 카테고리, 우측 모집 글 끝-->    
+
+    <!-- 풋터 시작 -->
+    <div class="text-center">
+        <h2 class="pb-3 text-color-1">셰어유는 언제나 당신의 환경 보호 활동을 기다립니다.</h2>
+    </div>
+    <hr>
+    <footer class="bg-light mt-4" id="footer">
+        <div class="container text-center text-color-4">
+            <p class="py-0 mb-0">(주)셰어유 | 서울시 노원구 공릉동 | <br>웹제작자: 서희재 | 이메일: shihi@swu.ac.kr | 이미지출처: freepik, flaction</p>
+            <p class="py-0 mb-4">Copyright<i class="bi bi-c-circle"></i> 2023.
+                <a href="" target="_blank" class="link-danger text-decoration-none">HEEJAE SEO</a>
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- 풋터 끝-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

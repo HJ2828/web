@@ -1,0 +1,243 @@
+body{
+    font-family: 'NanumSquareAcr';
+}
+h1, h2{
+    font-family: 'NanumSquareAceb';
+}
+h3, h4{
+    font-family: 'NanumSquareAcb';
+}
+h5, h6{
+    font-family: 'NanumSquareAcr';
+}
+pre{
+    font-family: 'NanumSquareAcr';
+}
+
+.margin-side{    /*공통 좌우 마진*/
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.margin-updown{ /* 단락 나누기 위아래 공백*/
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 공통 색상 */
+.bg-color-1{
+    background-color: #F65A26;
+}
+.bg-color-2{
+    background-color: #FAA68E;
+}
+.bg-color-3{
+    background-color: #EEECEE;
+}
+.bg-color-4{
+    background-color: #777777;
+}
+.text-color-1{
+    color: #F65A26;
+}
+.text-color-2{
+    color: #FAA68E;
+}
+.text-color-3{
+    color: #EEECEE;
+}
+.text-color-4{
+    color: #777777;
+}
+
+
+/* -- index.html -- */
+header{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(images/main.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#home{
+    padding-top: 15%;
+}
+
+/* 네비게이션 */
+#nav-search{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    width: 300px;
+    background-color: #EEECEE;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#search-bar{
+    border: 0;
+    outline: none;
+    background: none;
+    box-shadow: none;
+}
+
+#nav-search input{
+    box-shadow: none;
+}
+
+#search-icon{
+    font-size: 16px;
+    color: #777777;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    font-family: 'NanumSquareAcb' !important;
+}
+
+/* 플로깅 검색 */
+#plo-search{
+    height: 80px;
+    width: 650px; 
+}
+
+#plo-search-bar{
+    border: 0;
+    outline: none;
+    background: none;
+    box-shadow: none;
+}
+
+#plo-search input::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+#category button{
+    background-color: white;
+}
+
+#category button:hover{
+    background-color: #EEECEE;
+}
+
+/* 플로깅 모임 소개 */
+
+#week-plogging p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient: vertical;
+}
+
+#every-plogging p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient: vertical;
+}
+
+#week-plogging card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#every-plogging card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fs-small{
+    font-size: 13px;
+}
+
+/* 환경 보호 활동 참여 */
+#environmental-protection button:hover{
+    background-color: #F65A26;
+}
+
+.p-height{
+    height: 130px;
+}
+
+
+/* -- introduction.html -- */
+/* 사이트 소개 */
+.end-margin{
+    margin-bottom: 200px;
+}
+
+/* 사이트 소개 이미지 */
+#plogging-brand{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(images/hifive1.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+
+/* -- meeting.html -- */
+#meeting-search input::placeholder{
+    color: #777777;
+}
+
+#meeting-search button:hover{
+    background-color: #FAA68E;
+}
+
+#dropdownMenuButton1:hover{
+    background-color: #FAA68E;
+}
+
+#ploggingList p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient: vertical;
+}
+
+/* -- community.html -- */
+#community-search button:hover{
+    background-color: #FAA68E;
+}
+
+#communityList p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient: vertical;
+}

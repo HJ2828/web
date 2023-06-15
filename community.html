@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셰어유-커뮤니티</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <!-- 타이틀 아이콘 -->
+    <link rel="shortcut icon" type="image⁄x-icon" href="images/logo_icon.png">
+</head>
+<body>
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+        <div class="container px-5" id="nav-container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="로고" width="100">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="introduction.html">플로깅이란?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meeting.html">함께해요</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">커뮤니티</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex" role="search" id="nav-search">
+                        <i class="bi bi-search ms-1" id="search-icon"></i>
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="검색어를 입력하세요" aria-label="Search" id="search-bar">
+                    </form>
+                    <li class="nav-item ms-2"><a class="nav-link" href="#">로그인/회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+    
+    <!-- Top 버튼 시작 -->
+    <div class="d-flex justify-content-end align-items-end py-5 pe-5 fixed-bottom" id="top">
+        <a href="#community" title="top" class="text-dark fs-5 text-decoration-none">
+            <button class="bg-color-3 top-button rounded-pill px-4 border-0">TOP</button>
+        </a>
+    </div>
+    <!-- Top 버튼 끝 -->
+
+    <!-- 좌측 카테고리, 우측 모집 글 시작-->
+    <section class="container overflow-hidden py-5" id="community">
+        <div class="row margin-side">
+            <!-- 좌측 카테고리 시작 -->
+            <div class="col-2 py-5">
+                <ul class="list-group py-2">
+                    <h5 class="fw-bold ps-2 py-1">후기</h5>
+                    <h5 class="fw-bold ps-2 py-1">Tip</h5>
+                    <h5 class="fw-bold ps-2 py-1">자유글</h5>
+                    <h5 class="fw-bold ps-2 py-1">질문글</h5>
+                </ul>
+            </div>
+            <!-- 좌측 카테고리 끝 -->
+
+            <!-- 우측 커뮤니티 글 시작-->
+            <div class="col-10 py-5 bg-white">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>커뮤니티</h3>
+                        <p>플로깅 외 환경 관련 정보를 함께 공유해요.</p>
+                    </div>
+                    <div class="col-md-7 ps-5 align-self-center" id="community-search">
+                        <form class="d-flex justify-content-end" role="search">
+                            <i class="bi bi-search my-auto fs-5"></i>
+                            <input class="form-control me-0 w-75  border-0 bg-none shadow-none" type="search" placeholder="제목, 내용, 작성자명으로 검색" aria-label="Search">
+                            <button class="btn fs-4 w-25 border-0 bg-color-2 text-light" type="submit">검색</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div>
+                            <button class="bg-color-2 text-light rounded-2 border-0 px-3">전체</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">후기</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">Tip</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">자유</button>
+                            <button class="bg-color-3 text-dark rounded-2 border-0 px-3">질문</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 align-self-end" id="meeting-search">
+
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn bg-color-2 dropdown-toggle btn-sm text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  등록순
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">인기순</a></li>
+                                  <li><a class="dropdown-item" href="#">댓글순</a></li>
+                                  <li><a class="dropdown-item" href="#">좋아요순</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container py-3" id="communityList">
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-9" >
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">후기</div>
+                                        <div class="fw-bold">뚝섬 플로깅 모임 후기</div>
+                                    </div>
+                                    <p>지난 주말에 셰어유에서 뚝섬 플로깅을 모집하는 글을 보고 얼른 신청했어요.<br>오전 8시에 10명정도 모여서 1시간 동안 플로깅을 했습니다. 모두 처음보는 분들이라 어색하기도 했지만,</p>
+                                    <p class="align-bottom">플로러</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">13</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">13</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">13</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.20</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-7">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">Tip</div>
+                                        <div class="fw-bold">플로깅 후 쓰레기 처리법</div>
+                                    </div>
+                                    <p>셰어님들 안녕하세요. 저는 플로깅 8개월차 DD입니다.<br>플로깅 후에 나오는 쓰레기 분리배출 하시나요? 저는 이럴때마다 귀찮게 느껴지곤해요.</p>
+                                    <p class="align-bottom">DD</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">15</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">25</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">13</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.20</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-md-2 d-flex overflow-hidden ">
+                                    <img src="images/trash.jpg" style="height: 8rem;" alt="쓰레기" loading="lazy">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-9">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">질문</div>
+                                        <div class="fw-bold">플로깅할 때 주로 어디서 하시나요</div>
+                                    </div>
+                                    <p>다들 플로깅 어디서 하시나요?<br>뚝섬? 여의도?</p>
+                                    <p class="align-bottom">qwerty</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">1</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">18</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">3</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.19</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-7">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">자유</div>
+                                        <div class="fw-bold">미라클모닝~</div>
+                                    </div>
+                                    <p>미라클모닝 인증~!<br>평소 주말에는 10시까지 자다가 플로깅 시작부터는 8시에 일어나고 있어요~</p>
+                                    <p class="align-bottom">햇살</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">7</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">21</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">2</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.19</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-md-2 d-flex overflow-hidden ">
+                                    <img src="images/sunshine.jpg" style="height: 8rem;" alt="미라클모닝" loading="lazy">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-9">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">후기</div>
+                                        <div class="fw-bold">나혼자 플로깅 후기</div>
+                                    </div>
+                                    <p>그동안 지인들이랑 플로깅 하다가 처음으로 혼자 도전해봤습니다.<br>혼자서 하려니 조금 민망하기도 했지만 그래도 용기 내어서 원래 산책 자주하던 코스에서 플로깅을 했습니다.</p>
+                                    <p class="align-bottom">고고</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">2</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">16</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">1</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.18</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-9">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">자유</div>
+                                        <div class="fw-bold">아 배고프다</div>
+                                    </div>
+                                    <p>플로깅 하고나면 배고파요<br>매번 플로깅 끝나자마자 편의점으로 달려가서 컵라면이랑 삼각김밥 사서 먹는데 저만 그런가요?ㅋㅋ</p>
+                                    <p class="align-bottom">asdf1234</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">0</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">20</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">5</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.17</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shadow my-3">
+                        <a>
+                            <div class="row p-4">
+                                <div class="col-md-9">
+                                    <div class="d-flex aling-items-baseline mb-2">
+                                        <div class="bg-color-2 rounded px-2 align-middle me-2">질문</div>
+                                        <div class="fw-bold">요즘 사람들 많이 참여하나요?</div>
+                                    </div>
+                                    <p>플로깅이 떠오르고 있어서 저도 한번 해보려는데요<br>한강가면 사람들이 실제로 많이 하나요?</p>
+                                    <p class="align-bottom">프로질문러</p>
+                                </div>
+                                <div class="col-md-3 align-items-end flex-column">
+                                    <div class="d-flex align-items-end flex-column" style="height: 120px;">
+                                        <div class="d-flex p-2">
+                                            <i class="bi bi-heart pe-1"></i>
+                                            <p class="pe-1">3</p>
+                                            <i class="bi bi-eye pe-1"></i>
+                                            <p class="pe-1">34</p>
+                                            <i class="bi bi-chat pe-1"></i>
+                                            <p class="pe-1">16</p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p>2023.06.17</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container py-3">
+                    <div class="d-flex justify-content-center text-color-4">
+                        <p>&lt;</p>
+                        <p class="fw-bold text-dark">&nbsp;1&nbsp;</p>
+                        <p>&nbsp;2&nbsp;</p>
+                        <p>&nbsp;3&nbsp;</p>
+                        <p>&nbsp;...&nbsp;</p>
+                        <p>&nbsp;16&nbsp;</p>
+                        <p>&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 우측 커뮤니티 글 끝 -->
+        </div>
+    </section>
+    <!-- 좌측 카테고리, 우측 모집 글 끝-->    
+    
+    <!-- 풋터 시작 -->
+    <div class="text-center">
+        <h2 class="pb-3 text-color-1">셰어유는 언제나 당신의 환경 보호 활동을 기다립니다.</h2>
+    </div>
+    <hr>
+    <footer class="bg-light mt-4" id="footer">
+        <div class="container text-center text-color-4">
+            <p class="py-0 mb-0">(주)셰어유 | 서울시 노원구 공릉동 | <br>웹제작자: 서희재 | 이메일: shihi@swu.ac.kr | 이미지출처: freepik, flaction</p>
+            <p class="py-0 mb-4">Copyright<i class="bi bi-c-circle"></i> 2023.
+                <a href="" target="_blank" class="link-danger text-decoration-none">HEEJAE SEO</a>
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- 풋터 끝-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
