@@ -19,7 +19,7 @@
     : 첫 메인 페이지 (네비게이션바 로고 이미지)
   </li>
   <li>introduction.html
-    <br>>
+    <br>
     : 네비게이션바 - 플로깅이란?
   </li>
   <li>meeting.html
